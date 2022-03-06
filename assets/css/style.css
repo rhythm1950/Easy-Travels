@@ -86,22 +86,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid black;
+  border: 2px solid #4f7eb3bb;
 }
 
 .back-to-top i {
   font-size: 28px;
-  color: black;
+  color: #4f7eb3bb;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: transparent;
-  color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 .back-to-top:hover i {
-  color: #444444;
+  color: black;
 }
 
 .back-to-top.active {
@@ -981,14 +982,18 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(/3.jpg) center center no-repeat;
+  background: url(/23.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.events-title{
+  color: white !important;
+}
+
 .events::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.397);
   position: absolute;
   top: 0;
   right: 0;
@@ -1196,21 +1201,20 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
-  border-color: #625b4b;
-  color: white;
+  background: rgb(161, 161, 161);
+  color: black;
 }
 
 .book-a-table .php-email-form input::-webkit-input-placeholder, .book-a-table .php-email-form textarea::-webkit-input-placeholder {
-  color: #a49b89;
+  color: #ffffff;
 }
 
 .book-a-table .php-email-form input::-moz-placeholder, .book-a-table .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
+  color: #ffffff;
 }
 
 .book-a-table .php-email-form input::placeholder, .book-a-table .php-email-form textarea::placeholder {
-  color: #a49b89;
+  color: #ffffff;
 }
 
 .book-a-table .php-email-form input:focus, .book-a-table .php-email-form textarea:focus {
@@ -1235,7 +1239,9 @@ section {
 }
 
 .book-a-table .php-email-form button[type="submit"]:hover {
-  background: #4f7eb3bb;
+  background: white;
+  color: #4f7eb3bb;
+  border: 1px solid #4f7eb3bb;
 }
 
 /*--------------------------------------------------------------
@@ -1295,6 +1301,7 @@ section {
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  color: white;
 }
 
 .testimonials .swiper-pagination {
@@ -1305,7 +1312,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: black;
+  background-color: rgb(161, 161, 161);
   opacity: 1;
 }
 
@@ -1415,9 +1422,7 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/* Contact */
 .contact{
   padding-bottom: 0;
   margin-bottom: 0;
@@ -1437,11 +1442,17 @@ section {
   width: 44px;
   height: 44px;
   background: #4f7eb3bb;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+}
+
+.contact .info i:hover{
+  background: white;
+  color: #4f7eb3bb;
 }
 
 .contact .info h4 {
@@ -1520,21 +1531,20 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
-  border-color: #625b4b;
-  color: white;
+  background: rgb(161, 161, 161);
+  color: black;
 }
 
 .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
-  color: #a49b89;
+  color: white;
 }
 
 .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
+  color: white;
 }
 
 .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
-  color: #a49b89;
+  color: white;
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
@@ -1559,7 +1569,9 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #4f7eb3bb;
+  background: white;
+  color: #4f7eb3bb;
+  border: 1px solid #4f7eb3bb;
 }
 
 
@@ -1581,9 +1593,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 #footer {
   background: #4f7eb3bb;
   padding: 0 0 30px 0;
@@ -1719,7 +1729,11 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #4f7eb3bb;
+  background: black;
+}
+
+.footer-links h4{
+  margin-left: 20px;
 }
 
 #footer .copyright {
@@ -1732,4 +1746,7 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+#footer .credits a{
+  color: white;
 }
