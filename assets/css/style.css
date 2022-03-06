@@ -728,7 +728,7 @@ section {
 
 /* About */
 .about {
-  background: url(/assets/img/bg-2.jpg) center center;
+  background: url(../img/bg-4.jpg) center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -970,7 +970,7 @@ section {
 
 /* Tours */
 .tours {
-  background: url(/assets/img/bg-3.jpg) center center no-repeat;
+  background: url(../img/bg-3.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
