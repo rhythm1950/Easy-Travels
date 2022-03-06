@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(/assets/img/bg-2.jpg) top center;
+  background: url(/assets/img/bg-2.JPG) top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -728,7 +728,7 @@ section {
 
 /* About */
 .about {
-  background: url(/assets/img/bg-4.jpg) center center;
+  background: url(/assets/img/bg-4.JPG) center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -970,7 +970,7 @@ section {
 
 /* Tours */
 .tours {
-  background: url(/assets/img/bg-3.jpg) center center no-repeat;
+  background: url(/assets/img/bg-3.JPG) center center no-repeat;
   background-size: cover;
   position: relative;
 }
