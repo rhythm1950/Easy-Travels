@@ -1947,5 +1947,4 @@ section {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
 }
