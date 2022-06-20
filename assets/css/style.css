@@ -1931,8 +1931,3 @@ section {
 #footer .credits a {
   color: white;
 }
-
-/* Preloader */
-#preloader {
-  position: fixed;
-}
