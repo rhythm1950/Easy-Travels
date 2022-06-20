@@ -1943,7 +1943,3 @@ section {
   overflow: hidden;
   background: #4f7eb3bb;
 }
-
-#preloader:before {
-  content: "";
-}
