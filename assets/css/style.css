@@ -1946,5 +1946,4 @@ section {
 
 #preloader:before {
   content: "";
-  position: fixed;
 }
