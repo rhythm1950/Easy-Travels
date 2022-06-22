@@ -1907,7 +1907,3 @@ section {
   transition: 0.3s;
   border-radius: 50px;
 }
-
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: black;
-}
