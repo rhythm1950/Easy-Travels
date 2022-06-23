@@ -1884,7 +1884,3 @@ section {
   border-radius: 50px;
   border: 1px solid white;
 }
-
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-}
