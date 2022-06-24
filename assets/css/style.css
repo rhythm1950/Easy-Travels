@@ -1871,7 +1871,3 @@ section {
   display: inline-block;
   line-height: 1;
 }
-
-#footer .footer-top .footer-links ul a:hover {
-  color: black;
-}
