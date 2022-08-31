@@ -2,121 +2,1423 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Swiper CSS -->
+    <!-- Additional CSS Files -->
     <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
     />
 
-    <title>Image Slider</title>
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <title>Easy Travels</title>
   </head>
 
   <body>
-    <section
-      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-      class="swiper mySwiper2"
-    >
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/6.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/5.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/4.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/7.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/8.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/9.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/3.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/2.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/10.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/11.jpg" alt="image" />
-        </div>
-      </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </section>
-
-    <div thumbsSlider="" class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/6.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/5.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/4.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/7.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/8.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/9.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/3.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/2.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/10.jpg" alt="image" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="./img/11.jpg" alt="image" />
+    <!-- Top Bar -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"
+            ><span>+1 894 8922</span></i
+          >
+          <i class="bi bi-clock d-flex align-items-center ms-4"
+            ><span> Mon-Sat: 9 AM - 6 PM</span></i
+          >
         </div>
       </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Header -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Schedule</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#why-us">Why Us</a></li>
+            <li><a class="nav-link scrollto" href="#tours">Recent Tours</a></li>
+            <li><a class="nav-link scrollto" href="#packages">Packages</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
 
-    <script src="main.js"></script>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <a
+          href="#book-a-ticket"
+          class="book-a-ticket-btn scrollto d-none d-lg-flex"
+          >Book a Ticket</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+      <div
+        class="container position-relative text-center text-lg-start"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="mb-3">Welcome to Easy Travels</h1>
+            <h2>
+              In This Small Life You Won't Get Unlimited Chances To Travel The
+              World Anytime. So, What Are You Waiting For? Fly With Us Today!
+            </h2>
+
+            <div>
+              <a
+                href="#menu"
+                class="btn-menu animated fadeInUp scrollto hero-btn"
+                >Schedule</a
+              >
+              <a
+                href="#book-a-ticket"
+                class="btn-book animated fadeInUp scrollto hero-btn"
+                >Book a Ticket</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <a
+              href="https://www.youtube.com/channel/UCg6yGSdzXvUmSmoaHo_VoAg/"
+              class="glightbox play-btn"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Tours -->
+    <section id="menu" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Our Schedule</h2>
+          <p>Check Our Upcoming Tours</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-malaysia">Malaysia</li>
+              <li data-filter=".filter-maldives">Maldives</li>
+              <li data-filter=".filter-indonesia">Indonesia</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 menu-item filter-malaysia">
+            <img
+              src="./assets/img/gallery-1.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Perhantian Islands</a><span>9 Aug</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-indonesia">
+            <img
+              src="./assets/img/gallery-2.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Nusa Dua Beach</a><span>31 July</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-malaysia">
+            <img
+              src="./assets/img/gallery-3.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Kota kinabalu</a><span>13 July</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-maldives">
+            <img
+              src="./assets/img/gallery-4.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Cocoa Island</a><span>27 June</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-indonesia">
+            <img
+              src="./assets/img/gallery-5.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Gili Trawangan</a><span>7 June</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-indonesia">
+            <img
+              src="./assets/img/gallery-6.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Pink Beach</a><span>20 May</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-malaysia">
+            <img
+              src="./assets/img/gallery-7.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Batu Ferringhi</a><span>1 May</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-maldives">
+            <img
+              src="./assets/img/gallery-8.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">landaa Giraavaru</a><span>14 April</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-maldives">
+            <img
+              src="./assets/img/gallery-3.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Reethi Rah</a><span>29 March</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-indonesia">
+            <img
+              src="./assets/img/gallery-1.jpg"
+              class="menu-img"
+              alt="easy-travels"
+            />
+            <div class="menu-content">
+              <a href="#">Sire Beach</a><span>12 March</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              cumque hic nam?
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            ></div>
+
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h2 class="mb-3">
+                Travel The World and Feel The Amazing Beauty of Nature
+              </h2>
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit.
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us Section -->
+      <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Why Us</h2>
+            <p>Why Choose Easy Travels</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>Exclusive Packages</h4>
+                <p>
+                  Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+                  consectetur ducimus vero placeat
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h4>100% Reliable</h4>
+                <p>
+                  Dolorem est fugiat voluptate velit esse. Dicta veritatis dolor
+                  quod et vel dire leno para dest
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                <span>03</span>
+                <h4>Affordable Costs</h4>
+                <p>
+                  Molestiae officiis omnis illo asperiores. Aut doloribus vitae
+                  sunt debitis quo vel nam quis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Book a Ticket Section -->
+      <section id="book-a-ticket" class="book-a-ticket">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Reservation</h2>
+            <p>Book a Ticket</p>
+          </div>
+
+          <form
+            action="forms/book-a-ticket.php"
+            method="post"
+            role="form"
+            class="php-email-form"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  data-rule="email"
+                  data-msg="Please enter a valid email"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  placeholder="Your Phone"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="text"
+                  name="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="Date"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="time"
+                  id="time"
+                  placeholder="Time"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="people"
+                  id="people"
+                  placeholder="# of people"
+                  data-rule="minlen:1"
+                  data-msg="Please enter at least 1 chars"
+                />
+                <div class="validate"></div>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your booking request was sent. We will call back or send an
+                Email to confirm your reservation. Thank you!
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit">Book a Ticket</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Tours Section -->
+      <section id="tours" class="tours">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Happy Tours</h2>
+            <p class="tours-title">Our Recent Tours</p>
+          </div>
+
+          <div
+            class="events-slider swiper-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row tour-item">
+                  <div class="col-lg-6">
+                    <img
+                      src="./assets/img/gallery-1.jpg"
+                      class="img-fluid"
+                      alt="easy-travels"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3 class="tours-title">Malaysia</h3>
+                    <div class="date">
+                      <p><span>4 March</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Duis aute irure
+                        dolor in reprehenderit in voluptate velit.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row tour-item">
+                  <div class="col-lg-6">
+                    <img
+                      src="./assets/img/gallery-2.jpg"
+                      class="img-fluid"
+                      alt="easy-travels"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3 class="tours-title">Maldives</h3>
+                    <div class="date">
+                      <p><span>16 February</span></p>
+                    </div>
+
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Duis aute irure
+                        dolor in reprehenderit in voluptate velit.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row tour-item">
+                  <div class="col-lg-6">
+                    <img
+                      src="./assets/img/gallery-3.jpg"
+                      class="img-fluid"
+                      alt="easy-travels"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3 class="tours-title">Indonesia</h3>
+                    <div class="date">
+                      <p><span>31 January</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Duis aute irure
+                        dolor in reprehenderit in voluptate velit.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circled"></i> Ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                      </li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages Section -->
+      <section id="packages" class="packages">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Exclusive Packages</h2>
+            <p>Check Our Packages</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    data-bs-toggle="tab"
+                    href="#tab-1"
+                    >Weekly Package</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"
+                    >Monthly Package</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3"
+                    >One Way Package</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"
+                    >Up-down Package</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"
+                    >Specoial Package</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Weekly Package With Easy Travels</h3>
+                      <p>
+                        Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka
+                      </p>
+                      <p>
+                        Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                        atque harum sint. Laborum eos ipsum ipsa odit magni.
+                        Incidunt hic ut molestiae aut qui. Est repellat minima
+                        eveniet eius et quis magni nihil. Consequatur dolorem
+                        quaerat quos qui similique accusamus nostrum rem vero
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/gallery-7.jpg"
+                        alt="easy-travels"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Monthly Package With Easy Travels</h3>
+                      <p>
+                        Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka
+                      </p>
+                      <p>
+                        Ea ipsum voluptatem consequatur quis est. Illum error
+                        ullam omnis quia et reiciendis sunt sunt est. Non
+                        aliquid repellendus itaque accusamus eius et velit ipsa
+                        voluptates. Optio nesciunt eaque beatae accusamus lerode
+                        pakto madirna desera vafle de nideran pal
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/gallery-6.jpg"
+                        alt="easy-travels"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>One-way Package With Easy Travels</h3>
+                      <p>
+                        Eos voluptatibus quo. Odio similique illum id quidem non
+                        enim fuga. Qui natus non sunt dicta dolor et. In
+                        asperiores velit quaerat perferendis aut
+                      </p>
+                      <p>
+                        Iure officiis odit rerum. Harum sequi eum illum corrupti
+                        culpa veritatis quisquam. Neque necessitatibus illo
+                        rerum eum ut. Commodi ipsam
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/gallery-5.jpg"
+                        alt="easy-travels"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Up-down Package With Easy Travels</h3>
+                      <p>
+                        Totam aperiam accusamus. Repellat consequuntur iure
+                        voluptas iure porro quis delectus
+                      </p>
+                      <p>
+                        Eaque consequuntur consequuntur libero expedita in
+                        voluptas. Nostrum ipsam necessitatibus aliquam fugiat
+                        debitis quis velit. Eum ex maxime error in consequatur
+                        corporis atque. Eligendi asperiores sed qui veritatis
+                        aperiam quia a laborum inventore
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/gallery-4.jpg"
+                        alt="easy-travels"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Special Package With Easy Travels</h3>
+                      <p>
+                        Omnis blanditiis saepe eos autem qui sunt debitis porro
+                        quia.
+                      </p>
+                      <p>
+                        Exercitationem nostrum omnis. Ut reiciendis repudiandae
+                        minus. Omnis recusandae ut non quam ut quod eius qui.
+                        Ipsum quia odit vero atque qui quibusdam amet. Occaecati
+                        sed est sint aut vitae molestiae voluptate vel
+                      </p>
+                    </div>
+
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/gallery-3.jpg"
+                        alt="easy-travels"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Clients' Reviews</h2>
+            <p>What Our Clients Say</p>
+          </div>
+
+          <div
+            class="testimonials-slider swiper-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt="easy-travels"
+                  />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt="easy-travels"
+                  />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt="easy-travels"
+                  />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials-4.jpg"
+                    class="testimonial-img"
+                    alt="easy-travels"
+                  />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials-5.jpg"
+                    class="testimonial-img"
+                    alt="easy-travels"
+                  />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Tour Gallery</h2>
+            <p>Photos From Our Past Tours</p>
+          </div>
+        </div>
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-1.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-1.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-2.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-2.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-3.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-3.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-4.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-4.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-5.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-5.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-6.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-6.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-7.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-7.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery-8.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery-8.jpg"
+                    alt="easy-travels"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Our Team</h2>
+            <p>Meet Our Proffesional Tour Guides</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                  src="assets/img/member-1.jpg"
+                  class="img-fluid"
+                  alt="easy-travels"
+                />
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Walter White</h4>
+                    <span>Master Chef</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                <img
+                  src="assets/img/member-2.jpg"
+                  class="img-fluid"
+                  alt="easy-travels"
+                />
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Sarah Jhonson</h4>
+                    <span>Patissier</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                <img
+                  src="assets/img/member-3.jpg"
+                  class="img-fluid"
+                  alt="easy-travels"
+                />
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>William Anderson</h4>
+                    <span>Cook</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="container info-div" data-aos="fade-up">
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Winston Salem, NC 535022</p>
+                </div>
+
+                <div class="open-hours">
+                  <i class="bi bi-clock"></i>
+                  <h4>Open Hours:</h4>
+                  <p>
+                    Monday-Saturday:<br />
+                    9:00 AM - 6:00 PM
+                  </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>easy@travels.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 8946 88398 22</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="8"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206307.10990033767!2d-80.38354248114405!3d36.10449047017657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853a19b82d6b277%3A0x50325f54b43f8245!2sWinston-Salem%2C%20NC%2C%20USA!5e0!3m2!1sen!2sbd!4v1646579920331!5m2!1sen!2sbd"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Easy Travels</h3>
+                <p>
+                  Winston Salem <br />
+                  NC 535022, USA<br />
+                  <strong>Phone:</strong> +1 8946 88398 22<br />
+                  <strong>Email:</strong> easy@travels.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#menu">Schedule</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#why-us">Why Us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#tours">Recent Tours</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#packages">Our Packages</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#gallery">Our Gallery</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#team">Our Team</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium autem labore odit
+              </p>
+              <form action="" method="post">
+                <input
+                  type="email"
+                  placeholder="Enter Your Email Address"
+                  name="email"
+                /><input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          Copyright &copy; <strong><span>Easy Travels</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://shahriarrhythm.com/">Shahriar Rhythm</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Additional JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom Js File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
